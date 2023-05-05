@@ -1,0 +1,120 @@
+* {
+    background-color: rgb(76, 76, 167);
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: rgb(25, 15, 82);
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.entry-list li a{
+  font-family: 'Sigmar', cursive;
+  color: rgb(76, 76, 167);
+  background-color: rgb(25, 15, 82);
+}
+
+.entry-list {
+  background-color: rgb(25, 15, 82);
+  grid-row: 1 / span 2;
+  grid-column: 3;
+}
+
+.entry-list li {
+  background-color: rgb(25, 15, 82);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.heading {
+    font-family: 'Sigmar', cursive;
+    text-align: center;
+    margin-bottom: 5px;
+    color: rgb(76, 76, 167);
+    background-color: rgb(25, 15, 82);
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.subtitle {
+    font-family: 'Sigmar', cursive;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(76, 76, 167);
+    background-color: rgb(25, 15, 82);
+    position: relative;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#first-entry {
+    margin-top: 150px;
+}
+
+.entry {
+    font-family: 'Sigmar', cursive;
+    color: rgb(25, 15, 82);
+    margin-top: 50px;
+    padding-left: 75px;
+}
+
+.video-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }  
+
+.entry h3 {
+    text-decoration: underline;
+    scroll-margin-top: 150px;
+}
+
+.entry iframe {
+    grid-column: 1 / 2;
+  }
+  
+.entry p {
+    color: rgb(76, 76, 167);
+    background-color: rgb(25, 15, 82);
+    grid-column: 2 / 3;
+    width: 600px;
+    height: 400;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .entry p:hover {
+    transform: scale(1.4);
+    animation: disco 0.5s infinite;
+  }
+
+  @keyframes disco {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: blue;
+    }
+    50% {
+      background-color: green;
+    }
+    75% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: red;
+    }
+  }

@@ -9,6 +9,7 @@ const p3 = document.getElementsByTagName("p")[2];
 const p4 = document.getElementsByTagName("p")[3];
 
 p1.addEventListener("mouseover", () => {
+  hoverSound1.currentTime = 0;
   hoverSound1.play();
 });
 
@@ -17,6 +18,7 @@ p1.addEventListener("mouseout", () => {
 });
 
 p2.addEventListener("mouseover", () => {
+  hoverSound2.currentTime = 0;
   hoverSound2.play();
 });
 
@@ -25,6 +27,7 @@ p2.addEventListener("mouseout", () => {
 });
 
 p3.addEventListener("mouseover", () => {
+  hoverSound3.currentTime = 0;
   hoverSound3.play();
 });
 
@@ -33,6 +36,7 @@ p3.addEventListener("mouseout", () => {
 });
 
 p4.addEventListener("mouseover", () => {
+  hoverSound4.currentTime = 0;
   hoverSound4.play();
 });
 
